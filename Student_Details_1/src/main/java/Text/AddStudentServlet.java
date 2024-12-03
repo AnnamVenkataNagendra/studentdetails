@@ -34,6 +34,7 @@ public class AddStudentServlet extends HttpServlet {
 			add.setPlace(req.getParameter("place"));
 			int k=new InsertDao_Values().insert(add);
 			pw.println("==Welcome To page=="+avaliableString);
+			
 			if(k>0) {
 				pw.println("===Student_details is Added===");
 			}
